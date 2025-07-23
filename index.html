@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allwin - Terminal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="close-btn"></span>
+                <span class="minimize-btn"></span>
+                <span class="maximize-btn"></span>
+            </div>
+            <div class="terminal-title">Allwin@portfolio:~$</div>
+        </div>
+        
+        <div class="terminal-body">
+            <div class="terminal-output" id="output">
+                <div class="welcome-message">
+                    <pre>
+  █████╗ ██╗     ██╗     ██╗    ██╗██╗███╗   ██╗
+ ██╔══██╗██║     ██║     ██║    ██║██║████╗  ██║
+ ███████║██║     ██║     ██║ █╗ ██║██║██╔██╗ ██║
+ ██╔══██║██║     ██║     ██║███╗██║██║██║╚██╗██║
+ ██║  ██║███████╗███████╗╚███╔███╔╝██║██║ ╚████║
+ ╚═╝  ╚═╝╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝
+                    </pre>
+                    <p class="intro-text">
+                        Welcome to Allwin's Terminal Portfolio! 🚀
+                    </p>
+                    <p class="intro-text">
+                        I'm a passionate Full Stack Developer with expertise in modern web technologies.
+                        Type <span class="command">help</span> to see available commands.
+                    </p>
+                    <p class="intro-text">
+                        <span class="prompt">allwin@portfolio:~$</span> <span class="cursor">█</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="terminal-input-line">
+                <span class="prompt">allwin@portfolio:~$</span>
+                <input type="text" id="command-input" placeholder="Type a command..." autocomplete="off">
+                <span class="cursor">█</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Easter Egg Modal -->
+    <div id="easter-egg-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🚨 WARNING 🚨</h2>
+            </div>
+            <div class="modal-body">
+                <p>You just tried to run <code>sudo rm -rf /</code>!</p>
+                <p>Don't worry, this is just a portfolio - no files were harmed! 😅</p>
+                <p>But in real life, this command is extremely dangerous!</p>
+                <div class="matrix-effect">
+                    <div class="matrix-text"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeEasterEgg()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
